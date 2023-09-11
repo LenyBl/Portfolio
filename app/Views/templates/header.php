@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <title>Document</title>
+        <link rel="stylesheet" href="inc/style.css">
+    <title>Portfolio Blee Leny</title>
 </head>
 
 <body>
@@ -32,7 +33,7 @@
                         <a class="nav-link" href="#">PROJETS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
+                        <a class="nav-link" href="<?= base_url('contact'); ?>">CONTACT</a>
                     </li>
                 </ul>
             </div>
