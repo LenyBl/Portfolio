@@ -8,5 +8,6 @@ class Contact extends BaseController
     {
         echo view('templates/header.php');
         echo view('pages/contact.php');
+        echo view('templates/footer.php');
     }
 }

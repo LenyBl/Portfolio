@@ -8,5 +8,6 @@ class Home extends BaseController
     {
         echo view('templates/header.php');
         echo view('pages/profil.php');
+        echo view('templates/footer.php');
     }
 }
