@@ -39,7 +39,7 @@ class Email extends BaseConfig
     /**
      * SMTP Password
      */
-    public string $SMTPPass = 'Mbappedu93!';
+    public string $SMTPPass = 'gejp wvvx fsri knbq';
 
     /**
      * SMTP Port
@@ -49,7 +49,7 @@ class Email extends BaseConfig
     /**
      * SMTP Timeout (in seconds)
      */
-    public int $SMTPTimeout = 1;
+    public int $SMTPTimeout = 60;
 
     /**
      * Enable persistent SMTP connections
