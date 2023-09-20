@@ -30,24 +30,43 @@ class Contact extends BaseController
         } else {
             if ($this->isOnline()) {
 
-                $to = 'blee.leny@gmail.com';
+                $to = 'portfolio.bleeleny@gmail.com';
+                $subject = 'Portfolio';
                 $message = $this->request->getVar('message');
 
                 $email = \Config\Services::email();
 
+                $from = $this->request->getVar('email');
+                $fromName = $this->request->getVar('name');
+
+
                 $email->setTo($to);
-                $email->setForm($this->request->getVar('email'), $this->getVar('name'));
+                $email->setSubject($subject);
                 $email->setMessage($message);
+                $email->setFrom($from, $fromName);
 
                 if ($email->send()) {
 
                     return redirect()->to('/contact')->with('succès', 'Email envoyé avec succès !');
+              
 
                 } else {
 
-                    return redirect()->to('/contact')->with('error', 'Failed')->withInput();
+                    $errors = $email->printDebugger(['headers']);
+                    echo $errors;
+                    // return redirect()->to('/contact')->with('error', 'Failed')->withInput();
+                    
+
                 }
 
+                // try {
+                //     $email->send();
+                //     echo 'ok';
+                // } catch (\Exception $e){
+
+                //     echo 'Erreur : ' . $e->getMessage();
+            
+                // }
 
             } else {
                 return redirect()->to('/contact')->with('error', 'Check your internet connection')->withInput();
