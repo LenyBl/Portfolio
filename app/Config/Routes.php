@@ -7,3 +7,4 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index');
 $routes->get('contact', 'Contact::view');
+$routes->post('/send', 'Contact::send', ['as' =>'send.email']);

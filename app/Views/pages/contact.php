@@ -4,19 +4,42 @@
             <div class="card">
                 <div class="shadow card-body">
                     <h5 class="card-title">Formulaire de Contact</h5>
-                    <form>
+                    <form method="post" action="<?= route_to('send.email') ?>">
+
+                        <?php if (!empty(session()->getFlashdata('error'))): ?>
+                            <div class="alert alert-danger">
+                                <?= session()->getFlashdata('error'); ?>
+                            </div>
+                        <?php endif ?>
+
+                        <?php if (!empty(session()->getFlashdata('success'))): ?>
+                            <div class="alert alert-danger">
+                                <?= session()->getFlashdata('success'); ?>
+                            </div>
+                        <?php endif ?>
+
                         <div class="mb-3">
                             <label for="nom" class="form-label">Nom :</label>
-                            <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom">
+                            <input type="text" class="form-control" id="nom" placeholder="Entrez votre nom" name="name">
+                            <span class="text-danger">
+                                <?= (isset($validation) && $validation->hasError('name')) ? $validation->getError('name') : '' ?>
+                            </span>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email :</label>
-                            <input type="email" class="form-control" id="email" placeholder="Entrez votre email">
+                            <input type="email" class="form-control" id="email" placeholder="Entrez votre email"
+                                name="email">
+                            <span class="text-danger">
+                                <?= (isset($validation) && $validation->hasError('email')) ? $validation->getError('email') : '' ?>
+                            </span>
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Message :</label>
                             <textarea class="form-control" id="message" rows="5" placeholder="Entrez votre message"
-                                style="max-height: 300px; height: 300px;"></textarea>
+                                style="max-height: 300px; height: 300px;" name="message"></textarea>
+                            <span class="text-danger">
+                                <?= (isset($validation) && $validation->hasError('message')) ? $validation->getError('message') : '' ?>
+                            </span>
                         </div>
                         <button type="submit" class="btn btn-primary">Envoyer</button>
                     </form>
