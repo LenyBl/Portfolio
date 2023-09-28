@@ -8,7 +8,7 @@ class Contact extends BaseController
     {
         echo view('templates/header.php');
         echo view('pages/contact.php');
-        echo view('templates/footer.php');
+
     }
 
     public function send()
@@ -23,7 +23,6 @@ class Contact extends BaseController
         if (!$validation) {
 
             echo view('templates/header.php');
-            echo view('templates/footer.php');
             return view('pages/contact', ['validation' => $this->validator]);
 
 
@@ -47,15 +46,15 @@ class Contact extends BaseController
 
                 if ($email->send()) {
 
-                    return redirect()->to('/contact')->with('succès', 'Email envoyé avec succès !');
-              
+                    return redirect()->to('/')->with('succès', 'Email envoyé avec succès !');
+
 
                 } else {
 
-                    $errors = $email->printDebugger(['headers']);
-                    echo $errors;
-                    // return redirect()->to('/contact')->with('error', 'Failed')->withInput();
-                    
+                    // $errors = $email->printDebugger(['headers']);
+                    // echo $errors;
+                    return redirect()->to('/contact')->with('error', 'Failed')->withInput();
+
 
                 }
 
@@ -65,7 +64,7 @@ class Contact extends BaseController
                 // } catch (\Exception $e){
 
                 //     echo 'Erreur : ' . $e->getMessage();
-            
+
                 // }
 
             } else {
