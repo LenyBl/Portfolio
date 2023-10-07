@@ -14,13 +14,21 @@
 <body>
 
     <div class="sidebar">
-        <a class="active" href="<?= base_url('/') ?>">Accueil</a>
+        <a href="<?= base_url('/') ?>">Accueil</a>
         <a href="#news">BTS SIO</a>
         <a href="#contact">Veille Technologique</a>
         <a href="#about">Projets</a>
-        <a href="<?= base_url('contact') ?>">Contact</a>
+        <a href="<?= base_url('contact') ?>" id="contactLink">Contact</a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+
+
+

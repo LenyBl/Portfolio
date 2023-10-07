@@ -20,11 +20,6 @@ body {
     text-decoration: none;
 }
 
-/* Active/current link */
-.sidebar a.active {
-    background-color: #3498db; /* Couleur de fond pour le lien actif */
-    color: white;
-}
 
 /* Links on mouse-over */
 .sidebar a:hover:not(.active) {
