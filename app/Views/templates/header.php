@@ -14,6 +14,8 @@
 <body>
 
     <div class="sidebar">
+        <h1>Portfolio</h1>
+        <hr>
         <a href="<?= base_url('/') ?>">Accueil</a>
         <a href="#news">BTS SIO</a>
         <a href="#contact">Veille Technologique</a>
