@@ -1,3 +1,5 @@
+<?= $this->extend('layout'); ?>
+
 <div class="container mt-5">
     <div class="row d-flex justify-content-center">
         <div class="col-md-6 mb-4">

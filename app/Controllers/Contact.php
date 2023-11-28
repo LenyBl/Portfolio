@@ -6,8 +6,9 @@ class Contact extends BaseController
 {
     public function view()
     {
-        echo view('templates/header.php');
-        echo view('pages/contact.php');
+        return view('pages/contact.php', [
+            'title' => 'Contact'
+        ]);
 
     }
 
