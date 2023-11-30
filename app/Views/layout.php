@@ -26,18 +26,19 @@
                         href="<?= route_to('accueil') ?> " class="black-text text-darken-2"
                         style="margin: 0;">Portfolio</a></span>
                 <span class="black-text text-darken-2" style="margin: 0 ; padding: 0;">Blee Leny</span>
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">reorder</i></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i
+                        class="material-icons black-text">reorder</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="<?= route_to('contact') ?>" class="black-text text-darken-2">Contact</a></li>
 
                 </ul>
             </div>
             <div class="nav-content">
-                <ul class="tabs tabs-transparent light-blue darken-4">
+                <ul class="tabs tabs-transparent light-blue darken-3 ">
                     <li class="tab"><a href="<?= base_url() ?>">Profil</a></li>
                     <li class="tab"><a href="#test2">BTS SIO</a></li>
                     <li class="tab"><a href="#test4">Veille Technologique</a></li>
-                    <li class="tab"><a href="#test4">Projets</a></li>
+                    <li class="tab"><a href="<?= route_to('projets') ?>">Projets</a></li>
                 </ul>
             </div>
         </nav>
@@ -53,9 +54,7 @@
 
     </header>
 
-    <?= $this->section('content') ?>
-
-    <?= $this->endSection(); ?>
+    <?= $this->renderSection('content') ?>
 
     <footer class="page-footer grey lighten-4 z-depth-4">
         <div class="container">

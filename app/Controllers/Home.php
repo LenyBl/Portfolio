@@ -11,4 +11,11 @@ class Home extends BaseController
         ]);
 
     }
+
+    public function projets()
+    {
+        return view('pages/projets.php', [
+            'title' => 'Projets'
+        ]);
+    }
 }

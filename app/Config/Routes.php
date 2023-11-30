@@ -7,6 +7,8 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Home::index', ['as' =>'accueil']);
 
+$routes->get('projets', 'Home::projets', ['as' => 'projets']);
+
 $routes->get('contact', 'Contact::view');
 $routes->post('/send', 'Contact::send', ['as' =>'send.email']);
 
