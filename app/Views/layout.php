@@ -54,7 +54,13 @@
 
     </header>
 
-    <?= $this->renderSection('content') ?>
+    <main>
+
+        <?= $this->renderSection('content') ?>
+
+    </main>
+
+
 
     <footer class="page-footer grey lighten-4 z-depth-4">
         <div class="container">
