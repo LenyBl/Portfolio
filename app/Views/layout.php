@@ -33,20 +33,24 @@
 
                 </ul>
             </div>
-            <div class="nav-content">
-                <ul class="tabs tabs-transparent light-blue darken-3 ">
-                    <li class="tab"><a href="<?= base_url() ?>">Profil</a></li>
-                    <li class="tab"><a href="#test2">BTS SIO</a></li>
-                    <li class="tab"><a href="#test4">Veille Technologique</a></li>
-                    <li class="tab"><a href="<?= route_to('projets') ?>">Projets</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="<?= route_to('contact') ?>" class="black-text text-darken-2">Contact</a></li>
-            <hr>
-        </ul>
+            <nav>
+                <div class="nav-wrapper light-blue darken-3">
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="<?= route_to('accueil') ?>">Profil</a></li>
+                        <li><a href="<?= route_to('pages_bts') ?>">BTS SIO</a></li>
+                        <li><a href="<?= route_to('veille_technologique') ?>">VEILLE TECHNOLOGIQUE</a></li>
+                        <li><a href="<?= route_to('projets') ?>">PROJETS</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <ul class="sidenav" id="mobile-demo">
+                <li><a href="<?= route_to('accueil') ?>">Profil</a></li>
+                <li><a href="badges.html">BTS SIO</a></li>
+                <li><a href="collapsible.html">VEILLE TECHNOLOGIQUE</a></li>
+                <li><a href="<?= route_to('projets') ?>">PROJETS</a></li>
+                <hr>
+                <li><a href="<?= route_to('contact') ?>" class="black-text text-darken-2">Contact</a></li>
+            </ul>
 
 
 
