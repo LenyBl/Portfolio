@@ -1,9 +1,14 @@
 <?= $this->extend('layout');
 
-    $this->section('content');
+$this->section('content');
 ?>
 
-<p>test</p>
+<br>
+<div class="center" >
+    <!-- <embed src="competence_fichier/E4" type="" width="60%" height="100%"> -->
+</div>
+<hr>
+
 
 
 <?= $this->endSection(); ?>

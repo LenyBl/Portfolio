@@ -4,7 +4,7 @@ $this->section('content'); ?>
 
 <div class="container" style="border-radius: 5px; background-color: #0277bd; margin-top: 50px;">
     <div class="container white-text">
-        <img src="img/photo_profil.jpg" alt="" style="border-radius: 50%;">
+        <img class="circle" src="img/photo_profil.jpg" alt="">
         <h1 class="center">Blee Leny</h1>
     </div>
 
