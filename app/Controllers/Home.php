@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\FluxRssModel;
 
 class Home extends BaseController
 {
@@ -16,6 +17,17 @@ class Home extends BaseController
     {
         return view('pages/projets.php', [
             'title' => 'Projets'
+        ]);
+    }
+
+    public function veille(){
+
+        $fluxrss = new FluxRssModel();
+        $flux = $fluxrss->read(["https://blog.google/technology/ai/rss/"]);
+
+        return view('pages/veille_technologique.php', [
+            'title' => 'Veille Technologique',
+            'fluxrss' => $flux
         ]);
     }
 }
