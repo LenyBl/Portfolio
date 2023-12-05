@@ -8,23 +8,46 @@ $this->section('content');
 
 
 
-<?php foreach ($fluxrss as $flux): ?>
 
-    <h2>
-        <?= $flux['title'] ?>
-    </h2>
+<?php foreach ($fluxrss as $flux) { ?>
+    <br>
+    <div class="container center">
+        <table class="striped">
 
-    <?php foreach ($flux['items'] as $item): ?>
+            <thead>
+                <tr>
+                    <th class="center" style="">
+                        <?= $flux['title'] ?>
+                    </th>
+                </tr>
+            </thead>
 
-       <div class="article-item">
-            <h3><?= $item['title'] ?></h3>
-            <p><?= $item['description'] ?></p>
-            <a href="<?= $item['link'] ?>" target="_blank">Lire la suite</a>
-       </div>
+            <?php foreach ($flux['items'] as $item) { ?>
 
-    <?php endforeach ?>
 
-<?php endforeach ?>
+                <tbody>
+                    <tr>
+                        <td>
+                            <a href="<?= $item['link'] ?>" target="_blank">
+                                <?= $item['title'] ?>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <?= $item['description'] ?>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+
+            <?php } ?>
+    </div>
+    </table>
+    <br>
+    <hr>
+<?php } ?>
 
 
 

@@ -74,7 +74,8 @@
                 <div class="col l4 offset-l2 s12">
                     <h5 class="black-text text-darken-2">Links</h5>
                     <ul>
-                        <li><a class="black-text text-darken-2" href="#!">Link 1</a></li>
+                        <li><a class="black-text text-darken-2" href="#!">Link 1</a><i
+                        class="material-icons black-text"></i></li>
                         <li><a class="black-text text-darken-2" href="#!">Link 2</a></li>
                         <li><a class="black-text text-darken-2" href="#!">Link 3</a></li>
                         <li><a class="black-text text-darken-2" href="#!">Link 4</a></li>
@@ -85,7 +86,7 @@
         <div class="footer-copyright light-blue darken-4">
             <div class="container white-text">
                 © 2023 Blee Leny
-                <a class="white-text right" href="#!">More Links</a>
+               
             </div>
         </div>
     </footer>

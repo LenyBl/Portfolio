@@ -23,7 +23,7 @@ class Home extends BaseController
     public function veille(){
 
         $fluxrss = new FluxRssModel();
-        $flux = $fluxrss->read(["https://blog.google/technology/ai/rss"]);
+        $flux = $fluxrss->read(["https://www.kdnuggets.com/feed"]);
 
         return view('pages/veille_technologique.php', [
             'title' => 'Veille Technologique',
