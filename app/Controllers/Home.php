@@ -30,4 +30,9 @@ class Home extends BaseController
             'fluxrss' => $flux
         ]);
     }
+
+    public function e4(){
+
+        return view('pages/E4.html');
+    } 
 }

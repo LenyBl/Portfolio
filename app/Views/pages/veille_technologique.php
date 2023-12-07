@@ -46,7 +46,8 @@ $this->section('content');
     </div>
     </table>
     <br>
-    <hr>
+    <hr style="border-top: 2px  solid black;" width="100%">
+    <br>
 <?php } ?>
 
 
