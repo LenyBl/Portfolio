@@ -1,4 +1,6 @@
-<?= $this->extend('layout'); ?>
+<?= $this->extend('layout');
+
+$this->section('content'); ?>
 
 <div class="container mt-5">
     <div class="row d-flex justify-content-center">
@@ -65,5 +67,4 @@
     </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+<?= $this->endSection(); ?>
