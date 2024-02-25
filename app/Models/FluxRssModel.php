@@ -24,6 +24,8 @@ class FluxRssModel
     /**
      * Function to read the RSS feed
      *
+     * @param String $feed
+     * @param int $limit
      * @return array
      */
     private function readFeed(String $feed, int $limit): array

@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Controllers;
+
 use App\Models\FluxRssModel;
 
 class Home extends BaseController
@@ -20,7 +21,8 @@ class Home extends BaseController
         ]);
     }
 
-    public function veille(){
+    public function veille()
+    {
 
         $fluxrss = new FluxRssModel();
         $flux = $fluxrss->read(["https://www.kdnuggets.com/feed"]);
@@ -31,8 +33,23 @@ class Home extends BaseController
         ]);
     }
 
-    public function e4(){
+    public function e4()
+    {
 
         return view('pages/E4.html');
-    } 
+    }
+
+    public function btsSlam()
+    {
+        return view('pages/bts_slam.php', [
+            'title' => 'BTS SLAM'
+        ]);
+    }
+
+    public function btsSisr()
+    {
+        return view('pages/bts_sisr.php', [
+            'title' => 'BTS SISR'
+        ]);
+    }
 }
