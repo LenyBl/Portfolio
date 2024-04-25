@@ -69,12 +69,9 @@
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
-                <h5 class="black-text text-darken-2">Footer Content</h5>
-                <p class="black-text text-darken-2">You can use rows and columns here to organize your footer
-                    content.</p>
             </div>
             <div class="col l4 offset-l2 s12">
-                <h5 class="black-text text-darken-2">Links</h5>
+                <h5 class="black-text text-darken-2">Réseaux sociaux</h5>
                 <ul>
                     <li><a class="black-text text-darken-2" href="#!">Link 1</a><i
                                 class="material-icons black-text"></i></li>

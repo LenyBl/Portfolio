@@ -29,58 +29,111 @@ $this->section('content'); ?>
             <div class="col s12 m6 l6">
                 <h2>Compétences</h2>
                 <hr>
-                <h5>Développement :</h5>
-                <label for="html">HTML / CSS</label>
-                <div class="progress">
-                    <div class="determinate light-blue darken-3" id="html" style="width: 80%"></div>
+                <div class="row" style="margin-top: 30px;">
+                    <div class="card col s12 m6 l3 card-effect" style="margin-right: 15px">
+                        <div class="card-image" style="padding: 20px">
+                            <img src="img/html.png">
+                        </div>
+                    </div>
+                    <div class="card col s12 m6 l3" style="margin-right: 15px">
+                        <div class="card-image" style="padding: 20px">
+                            <img src=" img/css.png">
+                        </div>
+                    </div>
+                    <div class="card col s12 m6 l3" style="margin-right: 15px">
+                        <div class="card-image" style="padding: 20px">
+                            <img src=" img/js.png">
+                        </div>
+                    </div>
+                    <div class="card col s12 m6 l3" style="margin-right: 15px">
+                        <div class="card-image
+                        " style="padding: 20px">
+                            <img src=" img/java.png">
+                        </div>
+                    </div>
+                    <div class="card col s12 m6 l3" style="margin-right: 15px">
+                        <div class="card-image
+                        " style="padding: 20px">
+                            <img src=" img/csharp.png">
+                        </div>
+                    </div>
+                    <div class="card col s12 m6 l3" style="margin-right: 15px">
+                        <div class="card-image
+                        " style="padding: 20px">
+                            <img src=" img/php.png">
+                        </div>
+                    </div>
+                    <div class="card col s12 m6 l3" style="margin-right: 15px">
+                        <div class="card-image
+                        " style="padding: 20px">
+                            <img src=" img/python.png">
+                        </div>
+                    </div>
+                    <div class="card col s12 m6 l3" style="margin-right: 15px">
+                        <div class="card-image
+                        " style="padding: 20px">
+                            <img src=" img/sql-server.png">
+                        </div>
+                    </div>
+                    <div class="card col s12 m6 l3" style="margin-right: 15px">
+                        <div class="card-image
+                        " style="padding: 20px">
+                            <img src=" img/codeigniter.png">
+                        </div>
+                    </div>
                 </div>
-                <label for="javascript">Javascript</label>
-                <div class="progress">
-                    <div class="determinate light-blue darken-3" id="javascript" style="width: 40%"></div>
-                </div>
-                <label for="php">PHP (Code Igniter 4)</label>
-                <div class="progress">
-                    <div class="determinate light-blue darken-3" id="php" style="width: 70%"></div>
-                </div>
-                <label for="java">Java</label>
-                <div class="progress">
-                    <div class="determinate light-blue darken-3" id="java" style="width: 60%"></div>
-                </div>
-                <label for="C#">C#</label>
-                <div class="progress">
-                    <div class="determinate light-blue darken-3" id="C#" style="width: 50%"></div>
-                </div>
-                <label for="windev">Windev</label>
-                <div class="progress">
-                    <div class="determinate light-blue darken-3" id="windev" style="width: 50%"></div>
-                </div>
-                <h5>Base de données :</h5>
-                <label for="mysql">Mariadb / MySQL</label>
-                <div class="progress">
-                    <div class="determinate light-blue darken-3" id="mysql" style="width: 60%"></div>
-                </div>
-                <label for="postgresql">Postgresql</label>
-                <div class="progress">
-                    <div class="determinate light-blue darken-3" id="postgresql" style="width: 40%"></div>
-                </div>
-                <label for="merise">Merise</label>
-                <div class="progress">
-                    <div class="determinate light-blue darken-3" id="merise" style="width: 90%"></div>
-                </div>
-                <h5>Scripting :</h5>
-                <label for="python">Python</label>
-                <div class="progress">
-                    <div class="determinate light-blue darken-3" id="python" style="width: 40%"></div>
-                </div>
-                <h5>Virtualisation :</h5>
-                <label for="VirtualBox">VirtualBox</label>
-                <div class="progress">
-                    <div class="determinate light-blue darken-3" id="VirtualBox" style="width: 60%"></div>
-                </div>
-                <label for="proxmox">Proxmox</label>
-                <div class="progress">
-                    <div class="determinate light-blue darken-3" id="proxmox" style="width: 60%"></div>
-                </div>
+                <!-- <h5>Développement :</h5>
+                  <label for="html">HTML / CSS</label>
+                 <div class="progress">
+                     <div class="determinate light-blue darken-3" id="html" style="width: 80%"></div>
+                 </div>
+                 <label for="javascript">Javascript</label>
+                 <div class="progress">
+                     <div class="determinate light-blue darken-3" id="javascript" style="width: 40%"></div>
+                 </div>
+                 <label for="php">PHP (Code Igniter 4)</label>
+                 <div class="progress">
+                     <div class="determinate light-blue darken-3" id="php" style="width: 70%"></div>
+                 </div>
+                 <label for="java">Java</label>
+                 <div class="progress">
+                     <div class="determinate light-blue darken-3" id="java" style="width: 60%"></div>
+                 </div>
+                 <label for="C#">C#</label>
+                 <div class="progress">
+                     <div class="determinate light-blue darken-3" id="C#" style="width: 50%"></div>
+                 </div>
+                 <label for="windev">Windev</label>
+                 <div class="progress">
+                     <div class="determinate light-blue darken-3" id="windev" style="width: 50%"></div>
+                 </div>
+                 <h5>Base de données :</h5>
+                 <label for="mysql">Mariadb / MySQL</label>
+                 <div class="progress">
+                     <div class="determinate light-blue darken-3" id="mysql" style="width: 60%"></div>
+                 </div>
+                 <label for="postgresql">Postgresql</label>
+                 <div class="progress">
+                     <div class="determinate light-blue darken-3" id="postgresql" style="width: 40%"></div>
+                 </div>
+                 <label for="merise">Merise</label>
+                 <div class="progress">
+                     <div class="determinate light-blue darken-3" id="merise" style="width: 90%"></div>
+                 </div>
+                 <h5>Scripting :</h5>
+                 <label for="python">Python</label>
+                 <div class="progress">
+                     <div class="determinate light-blue darken-3" id="python" style="width: 40%"></div>
+                 </div>
+                 <h5>Virtualisation :</h5>
+                 <label for="VirtualBox">VirtualBox</label>
+                 <div class="progress">
+                     <div class="determinate light-blue darken-3" id="VirtualBox" style="width: 60%"></div>
+                 </div>
+                 <label for="proxmox">Proxmox</label>
+                 <div class="progress">
+                     <div class="determinate light-blue darken-3" id="proxmox" style="width: 60%"></div>
+                 </div> -->
             </div>
             <div class="col s12 m6 l6">
                 <h2>Expériences</h2>
@@ -102,6 +155,61 @@ $this->section('content'); ?>
             </div>
         </div>
     </div>
+    <section>
+        <div class="container center">
+            <h3 class="center-align">Logiciels</h3>
+            <hr>
+            <div class="row" style="padding-top: 20px;">
+                <div class="col s12 m6 l3 ">
+                    <div class="card-image
+                        " style="padding: 20px">
+                        <img src=" img/csharp.png">
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card-image
+                        " style="padding: 20px">
+                        <img src=" img/csharp.png">
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card-image
+                        " style="padding: 20px">
+                        <img src=" img/csharp.png">
+                    </div>
+                </div>
+                <div class="col s12 m6 l3">
+                    <div class="card-image
+                        " style="padding: 20px">
+                        <img src=" img/csharp.png">
+                    </div>
+                </div>
+                <div class="col s12 m6 l3" style="padding-top: 20px">
+                    <div class="card-image
+                        " style="padding: 20px">
+                        <img src=" img/csharp.png">
+                    </div>
+                </div>
+                <div class="col s12 m6 l3" style="padding-top: 20px">
+                    <div class="card-image
+                        " style="padding: 20px">
+                        <img src=" img/csharp.png">
+                    </div>
+                </div>
+                <div class="col s12 m6 l3" style="padding-top: 20px">
+                    <div class="card-image
+                        " style="padding: 20px">
+                        <img src=" img/csharp.png">
+                    </div>
+                </div>
+                <div class="col s12 m6 l3" style="padding-top: 20px">
+                    <div class="card-image
+                        " style="padding: 20px">
+                        <img src=" img/csharp.png">
+                    </div>
+                </div>
+            </div>
+    </section>
     <section class="grey lighten-2">
         <div class="container">
             <h3 class="center-align" style="padding-top: 20px;">Mes certifications</h3>
