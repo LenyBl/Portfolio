@@ -159,53 +159,53 @@ $this->section('content'); ?>
         <div class="container center">
             <h3 class="center-align">Logiciels</h3>
             <hr>
-            <div class="row" style="padding-top: 20px;">
+            <div class="row" style="padding-top: 30px; padding-bottom: 30px;">
                 <div class="col s12 m6 l3 ">
                     <div class="card-image
                         " style="padding: 20px">
-                        <img src=" img/csharp.png">
+                        <img src=" img/intellij.jpg">
                     </div>
                 </div>
                 <div class="col s12 m6 l3">
                     <div class="card-image
                         " style="padding: 20px">
-                        <img src=" img/csharp.png">
+                        <img src=" img/phpstorm.png">
                     </div>
                 </div>
                 <div class="col s12 m6 l3">
                     <div class="card-image
                         " style="padding: 20px">
-                        <img src=" img/csharp.png">
+                        <img src=" img/webstorm.png">
                     </div>
                 </div>
                 <div class="col s12 m6 l3">
                     <div class="card-image
                         " style="padding: 20px">
-                        <img src=" img/csharp.png">
+                        <img src=" img/vscode.jpg">
                     </div>
                 </div>
                 <div class="col s12 m6 l3" style="padding-top: 20px">
                     <div class="card-image
                         " style="padding: 20px">
-                        <img src=" img/csharp.png">
+                        <img src=" img/netbeans.png">
                     </div>
                 </div>
                 <div class="col s12 m6 l3" style="padding-top: 20px">
                     <div class="card-image
                         " style="padding: 20px">
-                        <img src=" img/csharp.png">
+                        <img src=" img/vscodecsharp.jpg">
                     </div>
                 </div>
                 <div class="col s12 m6 l3" style="padding-top: 20px">
                     <div class="card-image
                         " style="padding: 20px">
-                        <img src=" img/csharp.png">
+                        <img src=" img/windesign.png">
                     </div>
                 </div>
                 <div class="col s12 m6 l3" style="padding-top: 20px">
                     <div class="card-image
                         " style="padding: 20px">
-                        <img src=" img/csharp.png">
+                        <img src=" img/github.png">
                     </div>
                 </div>
             </div>
