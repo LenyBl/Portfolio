@@ -25,7 +25,7 @@ class Home extends BaseController
     {
 
         $fluxrss = new FluxRssModel();
-        $flux = $fluxrss->read(["https://www.kdnuggets.com/feed"]);
+        $flux = $fluxrss->read(["https://www.echojs.com/rss"]);
 
         return view('pages/veille_technologique.php', [
             'title' => 'Veille Technologique',
