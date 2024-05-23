@@ -25,7 +25,7 @@ class Home extends BaseController
     {
 
         $fluxrss = new FluxRssModel();
-        $flux = $fluxrss->read(["https://www.echojs.com/rss"]);
+        $flux = $fluxrss->read(["https://openjavascript.info/feed/"]);
 
         return view('pages/veille_technologique.php', [
             'title' => 'Veille Technologique',
@@ -36,7 +36,7 @@ class Home extends BaseController
     public function e4()
     {
 
-        return view('pages/E4.html');
+        return view('pages/E4 (2).html');
     }
 
     public function btsSlam()

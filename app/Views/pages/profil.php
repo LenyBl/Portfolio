@@ -142,14 +142,6 @@ $this->section('content'); ?>
                 Montauban. J'ai travaillé sur le développement d'une application web de gestion des offres et des
                 demandes des adhérents en PHP
                 (Code Igniter 3) et MySQL.</p>
-            <h5>Stage : ( Bac pro )</h5>
-            <ul>
-                <li>Stage et job d'été effectué dans l'entreprise Expert Cablage Et Réseaux. J'ai travaillé dans
-                    l'installation et la mise en service de réseaux informatique en courant fort et faible.</li>
-                <br>
-                <li>J'ai également fais un stage en Erasmus au Portugal à Almada dans l'entreprise Javali. J'ai appris à
-                    utiliser Drupal qui est un CMS.</li>
-            </ul>
         </div>
     </div>
 </div>
