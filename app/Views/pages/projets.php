@@ -69,7 +69,7 @@ $this->section('content');
                 </div>
                 <hr>
                 <div class="card-content">
-                    <a href="pdf/AP3 - PROJET PUBLICOM.pdf" class="black-text text-darken-2" target="_blank">Stage - Le
+                    <a href="pdf/Stage Le pont des savoirs.pdf" class="black-text text-darken-2" target="_blank">Stage - Le
                         pont des Savoirs</a>
                 </div>
             </div>
