@@ -25,11 +25,13 @@ class Home extends BaseController
     {
 
         $fluxrss = new FluxRssModel();
-        $flux = $fluxrss->read(["https://blog.jetbrains.com/phpstorm/feed/"]);
+        $flux = $fluxrss->read(["https://javascript.developpez.com/index/rss"]);
+        $flux2 = $fluxrss->read(["https://news.humancoders.com/t/javascript/items/feed"]);
 
         return view('pages/veille_technologique.php', [
             'title' => 'Veille Technologique',
-            'fluxrss' => $flux
+            'fluxrss' => $flux,
+            'fluxrss2' => $flux2
         ]);
     }
 
